@@ -39,7 +39,7 @@ document.getElementById("new_activity").addEventListener("click", new_activity);
 
 function new_activity() {
     console.log("----start------");
-    cordova.plugins.SimplePlugin.startNewActivity(function (success) {
+    cordova.plugins.SimplePlugin.startNewActivity("123",function (success) {
         alert(success)
     }, function (error) {
         alert(error)
