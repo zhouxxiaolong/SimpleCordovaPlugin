@@ -5,7 +5,7 @@
 `npm install -g plugman`
 
 ### 创建plugin
-`plugman create --name SimplePlugin --plugin_id com.skytech.simpleplugin --plugin_version 0.0.1`
+`plugman create --name SimplePlugin --plugin_id com.zxl.simpleplugin --plugin_version 0.0.1`
 
 ### 添加android平台代码
 
