@@ -24,6 +24,7 @@
 
 ## Android原生代码书写
 ### 建议在Android Studio中书写
+    生成Cordova项目，add Android platform，用Android Studio打开android文件夹，编写Android代码
 
 ## 外部使用
 
