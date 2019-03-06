@@ -1,10 +1,10 @@
-package com.skytech.simpleplugin;
+package com.zxl.simpleplugin;
 
 import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
-import com.skytech.helloplugin.NewActivity;
+import com.zxl.helloplugin.NewActivity;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;

@@ -1,4 +1,4 @@
-package com.skytech.helloplugin;
+package com.zxl.helloplugin;
 
 import android.app.Activity;
 import android.content.Intent;
