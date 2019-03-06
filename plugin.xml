@@ -12,7 +12,7 @@
             </feature>
         </config-file>
          <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:label="新页面" android:name="NewActivity"/>
+            <activity android:label="新页面" android:name="com.zxl.helloplugin.NewActivity"/>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.INTERNET" />

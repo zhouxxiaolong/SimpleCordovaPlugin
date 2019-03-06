@@ -30,21 +30,13 @@ public class SimplePlugin extends CordovaPlugin {
         if (action.equals("startNewActivity")) {
             String message = args.getString(0);
             Toast.makeText(mContext, "传入的值为：" + message, Toast.LENGTH_LONG).show();
-            this.coolMethod(message, callbackContext);
+
             Intent intent = new Intent(mContext, NewActivity.class);
             //！！！此处注意一定要用cordova.startActivityForResult！！！
             cordova.startActivityForResult(this, intent, 0);
             return true;
         }
         return false;
-    }
-
-    private void coolMethod(String message, CallbackContext callbackContext) {
-        if (message != null && message.length() > 0) {
-            callbackContext.success(message);
-        } else {
-            callbackContext.error("Expected one non-empty string argument.");
-        }
     }
 
     @Override
