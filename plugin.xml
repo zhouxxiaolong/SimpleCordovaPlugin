@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.skytech.simpleplugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>SimplePlugin</name>
+    <js-module name="SimplePlugin" src="www/SimplePlugin.js">
+        <clobbers target="cordova.plugins.SimplePlugin"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="SimplePlugin">
+                <param name="android-package" value="com.skytech.simpleplugin.SimplePlugin"/>
+            </feature>
+        </config-file>
+         <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:label="新页面" android:name="NewActivity"/>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+        
+        <source-file src="src/android/SimplePlugin.java" target-dir="src/com/skytech/simpleplugin"/>
+        <source-file src="src/android/NewActivity.java" target-dir="src/com/skytech/simpleplugin"/>
+        <resource-file src="src/android/layout/layout_new_activity.xml" target="res/layout/layout_new_activity.xml" />
+    </platform>
+</plugin>
