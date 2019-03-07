@@ -5,7 +5,9 @@
 `npm install -g plugman`
 
 ### 创建plugin
-`plugman create --name SimplePlugin --plugin_id cordova-plugin-simple --plugin_version 0.0.1`
+`plugman create --name SimplePlugin --plugin_id com.zxl.simpleplugin --plugin_version 0.0.1`
+
+此处plugin_id 暂时写com.zxl.simpleplugin,生成插件后在xml文件中修改为：cordova-plugin-simple
 
 ### 添加android平台代码
 
